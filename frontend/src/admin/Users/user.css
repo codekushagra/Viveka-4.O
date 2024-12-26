@@ -1,0 +1,59 @@
+/* Add a wrapper for responsive tables */
+.users {
+    padding: 20px;
+    overflow-x: auto; /* Make sure content can scroll horizontally on small screens */
+  }
+  
+  /* Table styling */
+  .MuiPaper-root {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  /* For smaller screens, adjust the font size and padding */
+  @media (max-width: 768px) {
+    .MuiTableCell-root {
+      font-size: 12px;
+      padding: 8px;
+    }
+  
+    .MuiTableHead-root {
+      font-size: 14px;
+    }
+  
+    /* Stack columns for small screens */
+    .MuiTable-root {
+      display: block;
+      overflow-x: auto;
+    }
+  
+    /* Make button smaller */
+    .MuiButton-root {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .MuiTableCell-root {
+      font-size: 10px;
+      padding: 6px;
+    }
+  
+    .MuiTableHead-root {
+      font-size: 12px;
+    }
+  
+    /* Stacked table structure */
+    .MuiTable-root {
+      display: block;
+      overflow-x: auto;
+    }
+  
+    /* Change the button to be smaller */
+    .MuiButton-root {
+      font-size: 10px;
+      padding: 4px 8px;
+    }
+  }
+  
