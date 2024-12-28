@@ -6,6 +6,7 @@ import { UserData } from "../../context/UserContext";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
+
 const Account = ({ user }) => {
 
   const {setIsAuth, setUser} = UserData();
@@ -33,7 +34,7 @@ const Account = ({ user }) => {
             <strong>Email - {user.email}</strong>
           </p>
 
-          <button onClick={()=>navigate(`/courses`)} className="common-btn">
+          <button onClick={()=>navigate(`/${user._id}/dashboard`)} className="common-btn">
           <MdDashboard /> 
           Dashboard
           </button>

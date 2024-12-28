@@ -87,15 +87,15 @@ const CourseDescription = ({user}) => {
                 <img src={`${server}/${course.image}`} alt="" className='course-image' />
                 <div className='course-info'>
                     <h1>{course.title}</h1>
-                    {/* <p>Instructor - {course.createdBy}</p> */}
+                    <p>Eligibility {course.createdBy}</p>
                     {/* <p>Duration - {course.duration} weeks</p> */}
     
                 </div>
                 
             </div>
             <p>{course.description}</p>
-            <p>{course.createdBy}</p>
-            <p>Let's get started with course At  ₹{course.price}</p>
+            
+            <p>Let's Unleash the fun @ ₹{course.price}/- Only</p>
     
                 {
                     user && user.subscription.includes(course._id) ? ( <button onClick={()=>navigate(`/course/study/${course._id}`)} className='common-btn'>Study</button> ) : (
