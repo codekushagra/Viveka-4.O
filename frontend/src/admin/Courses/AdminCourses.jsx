@@ -125,7 +125,7 @@ const AdminCourses = ({ user }) => {
                   required
                 />
 
-                <label htmlFor="text">Price</label>
+                <label htmlFor="text">Registration Fees</label>
                 <input
                   type="number"
                   value={price}

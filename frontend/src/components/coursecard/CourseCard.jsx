@@ -33,9 +33,11 @@ const CourseCard = ({ course }) => {
     <div className="course-card">
       <img src={`${server}/${course.image}`} alt="" className="course-image" />
       <h3>{course.title}</h3>
+      <p> Category : {course.category}</p>
       <p>Eligiblity : {course.createdBy}</p>
+
       
-      <p>Price- ₹{course.price}</p>
+      <p>Registration Price- ₹{course.price}</p>
       {isAuth ? (
         <>
           {user && user.role !== "admin" ? (
