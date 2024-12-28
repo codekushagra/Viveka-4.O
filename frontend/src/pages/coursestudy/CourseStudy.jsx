@@ -25,7 +25,7 @@ const CourseStudy = ({ user }) => {
           <img src={`${server}/${course.image}`} alt={course.title} width={350} />
           <h2>{course.title}</h2>
           <h4>{course.description}</h4>
-          <h5>Organized by - {course.createdBy}</h5>
+          <h5>Eligibility - {course.createdBy}</h5>
           {/* <h5>Duration - {course.duration} weeks</h5> */}
 
           {/* Button to join WhatsApp */}

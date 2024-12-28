@@ -14,6 +14,8 @@ const categories = [
   "Business",
   "Designing",
   "Architecture",
+  "Gaming",
+  "Mega Event",
 ];
 
 const AdminCourses = ({ user }) => {
@@ -131,7 +133,7 @@ const AdminCourses = ({ user }) => {
                   required
                 />
 
-                <label htmlFor="text">Organised By</label>
+                <label htmlFor="text">Eligiblity</label>
                 <input
                   type="text"
                   value={createdBy}

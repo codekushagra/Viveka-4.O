@@ -94,6 +94,7 @@ const CourseDescription = ({user}) => {
                 
             </div>
             <p>{course.description}</p>
+            <p>{course.createdBy}</p>
             <p>Let's get started with course At  ₹{course.price}</p>
     
                 {
