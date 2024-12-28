@@ -9,11 +9,11 @@ import axios from "axios";
 import { server } from "../../main";
 
 const categories = [
-  "Web Development",
-  "App Development",
-  "Game Development",
-  "Data Science",
-  "Artificial Intelligence",
+  "Robotics",
+  "Coding",
+  "Business",
+  "Designing",
+  "Architecture",
 ];
 
 const AdminCourses = ({ user }) => {

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Header = ({isAuth}) => {
   return (
     <header>
-        <a href='/'><div className='logo'> Tech Fusion Club</div></a>  
+        <a href='/'><div className='logo'><img src="/vivekaLogo.png" alt="" /></div></a>  
 
         <div className="link">
             <Link to={'/'}>Home</Link>
@@ -22,5 +22,6 @@ const Header = ({isAuth}) => {
     </header>
   )
 }
+
 
 export default Header

@@ -87,8 +87,8 @@ const CourseDescription = ({user}) => {
                 <img src={`${server}/${course.image}`} alt="" className='course-image' />
                 <div className='course-info'>
                     <h1>{course.title}</h1>
-                    <p>Instructor - {course.createdBy}</p>
-                    <p>Duration - {course.duration} weeks</p>
+                    {/* <p>Instructor - {course.createdBy}</p> */}
+                    {/* <p>Duration - {course.duration} weeks</p> */}
     
                 </div>
                 
