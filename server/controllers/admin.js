@@ -23,7 +23,7 @@ export const createCourse = TryCatch(async (req, res) => {
   });
 
   res.status(201).json({
-    message: "Course Created Successfully",
+    message: "Event Created Successfully",
   });
 });
 
@@ -32,7 +32,7 @@ export const addLectures = TryCatch(async (req, res) => {
 
   if (!course)
     return res.status(404).json({
-      message: "No Course with this id",
+      message: "No Event with this id",
     });
 
   const { title, description } = req.body;
@@ -90,7 +90,7 @@ export const deleteCourse = TryCatch(async (req, res) => {
   await User.updateMany({}, { $pull: { subscription: req.params.id } });
 
   res.json({
-    message: "Course Deleted",
+    message: "Event Deleted",
   });
 });
 
@@ -124,13 +124,13 @@ export const updateRole = TryCatch(async(req,res)=>{
     user.role = 'admin';
     await user.save()
 
-    return res.status(200).json({message :"Role updated Successfully to admin",});
+    return res.status(200).json({message :"Role updated Successfully to Admin",});
   }
 
   if(user.role ==='admin'){
     user.role = 'user';
     await user.save()
 
-    return res.status(200).json({message :"Role updated Successfully to user",});
+    return res.status(200).json({message :"Role updated Successfully to User",});
   }
 })

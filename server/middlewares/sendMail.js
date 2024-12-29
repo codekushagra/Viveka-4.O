@@ -45,10 +45,22 @@ const sendMail = async (email, subject, data) => {
             color: #7b68ee; /* Purple text */
             margin-bottom: 30px;
         }
+            .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .logo img {
+      max-height: 50px;
+    }
     </style>
 </head>
 <body>
+    
     <div class="container">
+      <div class="logo">
+      <img src="https://res.cloudinary.com/dlrpqkypx/image/upload/v1735455579/vivekaLogo_lapu4c.png" alt="Your Website Logo">
+
+    </div>
         <h1>OTP Verification</h1>
         <p>Hello ${data.name} your (One-Time Password) for your account verification is.</p>
         <p class="otp">${data.otp}</p> 
@@ -84,6 +96,7 @@ export const sendForgotMail = async (subject, data) => {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reset Your Password</title>
   <style>
+   
     body {
       font-family: Arial, sans-serif;
       background-color: #f9f9fb;
@@ -149,8 +162,9 @@ export const sendForgotMail = async (subject, data) => {
 </head>
 <body>
   <div class="container">
-    <div class="logo">
-      <img src="https://yourwebsite.com/logo.png" alt="Your Website Logo">
+     <div class="logo">
+      <img src="https://res.cloudinary.com/dlrpqkypx/image/upload/v1735455579/vivekaLogo_lapu4c.png" alt="Your Website Logo">
+
     </div>
     <h1>Reset Your Password</h1>
     <p>Hello,</p>
@@ -158,9 +172,9 @@ export const sendForgotMail = async (subject, data) => {
     <p style="text-align: center;">
       <a href="${process.env.frontendurl}/reset-password/${data.token}" class="button">Reset Password</a>
     </p>
-    <p>If you did not request this, please ignore this email.</p>
+    
     <div class="footer">
-      <p>Thank you,<br>Tech Fusion Club</p>
+      <p>Thank you,<br>Team Viveka 4.O</p>
       
     </div>
   </div>

@@ -29,10 +29,7 @@ const Register = () => {
 
           <label htmlFor="password">Password</label>
           <input type="password" value={password} onChange={(e)=> setPassword(e.target.value)} required />
-          <p>
-            Need a random Password? <a href='https://rpg-kushagra.onrender.com/' target='blank'>Click Here</a>
-          </p>
-
+          
           <button type='submit' disabled={btnLoading} className="common-btn">{btnLoading ? "Please Wait...": "Register"}</button> 
         </form>
         <p>

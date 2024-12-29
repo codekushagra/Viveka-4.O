@@ -54,7 +54,7 @@ const CourseCard = ({ course }) => {
                   onClick={() => navigate(`/course/${course._id}`)}
                   className="common-btn"
                 >
-                  Get Started
+                  Enroll Now
                 </button>
               )}
             </>

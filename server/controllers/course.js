@@ -32,7 +32,7 @@ export const fetchLectures = TryCatch(async(req,res)=>{
     }
 
     if(!user.subscription.includes(req.params.id)) return res.status(400).json({
-        message: "You have not subscribed to this course",
+        message: "You have not enrolled to this course",
     });
     res.json({lectures});
 });
@@ -47,7 +47,7 @@ export const fetchLecture = TryCatch(async(req,res)=>{
     }
 
     if(!user.subscription.includes(lecture.course)) return res.status(400).json({
-        message: "You have not subscribed to this course",
+        message: "You have not enrolled to this course",
     });
     res.json({lecture});
 
@@ -68,7 +68,7 @@ export const checkout = TryCatch(async(req,res)=>{
 
     if(user.subscription.includes(course._id)){
         return res.status(400).json({
-            message: "You have already subscribed to this course",
+            message: "You have already enrolled to this event",
             });
     }
 
@@ -111,7 +111,7 @@ export const paymentVerification = TryCatch(async (req, res) => {
         await user.save();
 
         res.status(200).json({
-            message: "Course Purchased successfully",
+            message: "Event Purchased successfully",
         });
     } else {
         return res.status(400).json({
